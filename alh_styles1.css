@@ -1,0 +1,32 @@
+	/*
+		WA160 Team Project 1
+		Author: Lani Hurley
+		Date: 8/16/2021
+		CSS Responsive Styles for navicon
+		A Lightworkers Have
+		Filename: alh_styles1.css
+	*/
+
+
+
+/* Mobile Styles: 0px to 480px */
+
+@media only screen and (max-width: 480px){
+
+	a#navicon {
+		display: block;
+	}
+
+	nav.horizontalNavigation ul {
+		display: none;
+	}
+
+	a#navicon:hover+ul, nav.horizontalNavigation ul:hover {
+		display: block;
+	}
+
+	section#leftColumn > ul {
+		animation-play-state: paused;
+	} 
+}
+

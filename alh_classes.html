@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+	WA160 Team Project 1
+	Author: Lani Hurley
+	Date: 8/16/2021
+	Classes page of A Lightworkers Haven
+	
+	Filename: alh_classes.html
+-->
+	<meta charset="utf-8" />
+	<meta name="keywords" content="PTSD, Retreat, Heal, Haven" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Google Fonts Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="alh_reset.css" rel="stylesheet" />
+	<link href="alh_styles.css" rel="stylesheet" />
+	<link href="alh_styles1.css" rel="stylesheet" media="screen"/>
+	<title>A Lightworkers Haven</title>
+</head>
+<body>
+	<div id="bannerTop">
+		<h1>A Lightworkers Haven<h1>
+	</div>
+	<h3>555 Mountain Road, Haven, NY 11778 &#149; (631) 555-5555</h3>
+	<header>
+		<img src="alh_sunsetLogo.jpg" alt="A picture of the sunset" />
+		<nav class="horizontalNavigation"><a id="navicon" href="#"><img src="alh_navicon.png" alt=" Navigation icon.">
+         	<ul>
+            	<li><a href="alh_home.html">Home</a></li>
+            	<li><a href="alh_about.html">About Us</li>
+            	<li><a href="alh_classes.html">Classes</a></li>
+            	<li><a href="alh_contact.html">Contact Us</a></li>
+         	</ul>
+      	</nav>
+	</header>
+	<!-- Date and Time JavaScript -->
+	<div id="dateNow">8/22/2021>2:45 p.m.</div>
+		<script>
+
+			// Store the current date and time
+
+   			let currentDay = new Date();
+   			let dateStr = currentDay.toLocaleDateString();
+   			let timeStr = currentDay.toLocaleTimeString();
+
+  			 //Display the current date and time
+   			document.getElementById("dateNow").innerHTML = dateStr + "<br />" + timeStr;
+		</script>
+
+		<!-- Display day of the week JavaScript-->
+		<p id="today"></p>
+		<script>
+   			let d = new Date();
+			let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			document.getElementById("today").innerHTML = days[d.getDay()];
+		</script>
+
+	<!-- Start of table form section -->
+	<section>
+		<p><strong>* Please refer below for our weekly class schedule.</strong></p><br/>
+		<table class="schedule">
+			<caption><strong>* All Times Eastern</strong></caption>
+			<colgroup>
+				<col id="firstCol" />
+				<col class="dayCols" span="7" />
+			</colgroup>
+		<thead>
+			<tr>
+				<th>Time</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+				<th>Sun</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>5:00 PM</th>
+				<td colspan="7">Reiki Healing</td>
+			</tr>
+			<tr>
+				<th>5:30 PM</th>
+				<td colspan="7">Shamanic Healing</td>
+			</tr>
+			<tr>
+				<th>6:00 PM</th>
+				<td rowspan="2">Hypnosis</td>
+				<td rowspan="2">Sound Bath</td>
+				<td rowspan="2">Neuro/Biofeedback</td>
+				<td rowspan="2">Sacred Stones</td>
+				<td>Medicinal Plants</td>
+				<td>Meditation</td>
+				<td rowspan="2">Acupunture</td> 
+			</tr>
+			<tr>
+				<th>6:30 PM</th>
+				<td>Family Constellations</td>
+				<td>Drum Circle</td>
+			</tr>
+			<tr>
+				<th>7:00 PM</th>
+				<td rowspan="4" colspan="4">Yoga</td>
+				<td>PTSD Survivors Group Meeting</td>
+				<td>Psycotherapy</td>
+				<td>Karaoke</td>
+			</tr>
+			<tr>
+				<th>7:30 PM</th>
+				<td>Massage Healing</td>
+			</tr>
+			<tr>
+				<th>8:00 PM</th>
+				<td rowspan="2">Journaling Workshop</td>
+			</tr>
+			<tr>
+				<th>8:30 PM</th>
+			</tr>
+			<tr>
+				<th>9:00 PM</th>
+				<td colspan="7">Art Healing</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="8">All Classes are held in the Oasis cabins.</td>
+			</tr>
+		</tfoot>
+	</table>
+</section>
+
+	<!-- End of table form section -->
+</body>
+<footer>A Lightworkers Haven &copy; 2021 All rights Reserved</footer>
+</html>

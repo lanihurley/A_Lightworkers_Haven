@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: "Lato", sans-serif;
+
+}
+/* 
+
+   WA160 Team Project 1
+   Author: Lani Hurley
+   Date: 8/16/2021
+   
+   Filename: alh_styles.css
+
+*/
+/* HTML and Body Styles */
+
+html {
+   background-attachment: fixed;
+   background-image: url("alh_back.jpg");
+   font-family: "Lato", sans-serif;  
+}
+
+body {
+   background-image: url("alh_bodyBack.png");
+   background-size: cover; 
+   box-shadow: rgb(51, 51, 51) 15px 0px 25px,
+               rgb(51, 51, 51) -15px 0px 25px;
+   font-weight: 400;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 960px;
+   min-width: 640px;
+   width: 95%;
+   font-size: 1em;
+} 
+
+body > section {
+   padding-right: 10px;
+   padding-left: 10px;
+}
+/* Logo Banner Styles */
+div#bannerTop {
+   font-size: 4em;
+   padding-top: 20px;
+   padding-left: 10px;
+}
+
+/* Address bar style */
+h3 {
+   text-align: right;
+}
+
+/* Body Header Styles */
+body > header > img {
+   display: block;
+   width: 100%;
+
+}
+
+
+/* Horizontal Navigation Styles */
+a#navicon {
+   display: none;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 25%;
+}
+
+nav.horizontalNavigation li {
+   display: block;
+   float: left;
+   text-transform: uppercase;
+
+}
+
+nav.horizontalNavigation a {
+   background-color: dimgray;
+   font-family: "Lato", sans-serif;
+   font-size: 1.2em;
+   line-height: 1.8em;
+   text-align: center;
+   display: block;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(239, 220, 156);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(71, 52, 29);
+}   
+
+
+/* Home page CSS */
+
+/* Left Column  Styles */
+section#leftColumn {
+   clear: left;
+   
+  
+}
+section#leftColumn h1 {
+   font-size: 2em;
+   padding-top: 20px;
+   text-align: center;
+}
+
+section#leftColumn > ul {
+   list-style-position: inside;
+   list-style-type: none;
+   text-align: center;
+   border: 4px double dimgray;
+   width: 30%;
+   height: 100%;
+   position: relative;
+   animation: mymove 6s;
+   animation-fill-mode: forwards;
+   border-radius: 50px;
+   background: radial-gradient(ivory, rgb(232, 182, 132),
+                              rgb(108, 80, 119),
+                              rgb(71, 52, 29));
+   box-shadow: rgb(51, 51, 51) 15px 0px 25px,
+               rgb(51, 51, 51) -15px 0px 25px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   line-height: 1.5em;
+}
+
+@keyframes mymove {
+   from {left: 0px}
+   to {left:  320px}
+}
+
+p#today {
+   text-align: center;
+}
+
+/* Footer Styles */
+
+footer {
+    
+   color: rgb(186, 186, 156);
+   background-color: rgb(71, 52, 29);
+   font-size: 0.9em;
+   padding: 10px 0px;
+   text-align: center;
+}
+
+/* Classes page CSS */
+
+/* Table Styles */
+table.schedule {
+
+   background: ivory;
+   border: 10px outset rgb(232, 182, 132);
+   border-collapse: collapse;
+   font-size: 0.9em;
+   width: 100%;
+   box-shadow: rgb(51, 51, 51) 15px 0px 25px,
+               rgb(51, 51, 51) -15px 0px 25px;
+}
+
+/* Table Cell Styles */
+table.schedule th, table.schedule td {
+   border:  1px solid gray;
+   text-align: center;
+}
+
+/* Table Caption Styles */
+table.schedule caption {
+   caption-side: bottom;
+   text-align: right;
+   color: black;
+}
+
+/* Row Group Styles */
+table.schedule thead {
+   background: rgb(108, 80, 119);
+   color: ivory;
+}
+
+table.schedule tfoot {
+   background: dimgray;
+   color: ivory;
+}
+
+table.schedule thead tr {
+   height: 20px;
+}
+
+table.schedule tbody  tr {
+   height: 30px;
+}
+
+/* Column Group Styles */
+col#firstCol {
+   background: rgb(218, 210, 218);
+   width: 12%;
+}
+
+col.daysCol {
+   background: rgb(255, 220, 255);
+   width: 110%;
+}
